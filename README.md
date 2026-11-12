@@ -11,11 +11,14 @@ How to run
     (premises-FOL, premises_fol, context, knowledge_base, kb, theory, given_info, premises / conclusion-FOL, conclusion_fol, question, query, hypothesis, conclusion).
 
 Method: symbolic parsing -> forward chaining (RuleTaker), CNF + binary resolution with Z3 as time-boxed fallback (FOLIO),
+
 structural causal model with interventions and abduction (CounterBench). No generative AI is used for any decision.
+
 Validation results (public datasets, measured by the notebook):
-  RuleTaker (dev sample)   accuracy 99.98%   time/sample 0.000977 s
-  FOLIO (validation)       accuracy 83.74%   time/sample 0.047530 s
-  CounterBench (alpha+backdoor) accuracy 94.17%   time/sample 0.000194 s
-  OVERALL ACCURACY: 92.63%   OVERALL INFERENCE TIME: 0.016234 s per sample
+RuleTaker (dev sample)   accuracy 99.98%   time/sample 0.000977 s
+FOLIO (validation)       accuracy 83.74%   time/sample 0.047530 s
+CounterBench (alpha+backdoor) accuracy 94.17%   time/sample 0.000194 s
+OVERALL ACCURACY: 92.63%   OVERALL INFERENCE TIME: 0.016234 s per sample
+
 Libraries: python, pandas, z3-solver, datasets, reportlab.
 
