@@ -14,11 +14,15 @@ Method: symbolic parsing -> forward chaining (RuleTaker), CNF + binary resolutio
 
 structural causal model with interventions and abduction (CounterBench). No generative AI is used for any decision.
 
-Validation results (public datasets, measured by the notebook):
-RuleTaker (dev sample)   accuracy 99.98%   time/sample 0.000977 s
-FOLIO (validation)       accuracy 83.74%   time/sample 0.047530 s
-CounterBench (alpha+backdoor) accuracy 94.17%   time/sample 0.000194 s
-OVERALL ACCURACY: 92.63%   OVERALL INFERENCE TIME: 0.016234 s per sample
+## Validation results (public datasets)
+
+- **RuleTaker (dev sample):** accuracy 99.98%, time/sample 0.000977 s
+- **FOLIO (validation):** accuracy 83.74%, time/sample 0.047530 s
+- **CounterBench (alpha + backdoor):** accuracy 94.17%, time/sample 0.000194 s
+
+**Overall accuracy:** 92.63%
+
+**Overall inference time:** 0.016234 s per samplee
 
 Libraries: python, pandas, z3-solver, datasets, reportlab.
 
